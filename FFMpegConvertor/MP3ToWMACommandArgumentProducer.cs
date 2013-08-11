@@ -10,7 +10,7 @@
         /// <param name="filename"></param>
         /// <param name="bitrate">Bitrate would be 128k, 256k...</param>
 
-        public MP3ToWMACommandArgumentProducer(string filename, string bitrate = null) : base(filename)
+        public MP3ToWMACommandArgumentProducer(string filename, string pathToOutputFolder = null, string bitrate = null) : base(filename, pathToOutputFolder)
         {
             _bitrate = bitrate;
         }

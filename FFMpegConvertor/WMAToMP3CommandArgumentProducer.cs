@@ -14,7 +14,7 @@ namespace FFMpegConvertor
         /// </summary>
         /// <param name="filename"></param>
         /// <param name="bitrate">Bitrate would be 128k, 256k...</param>
-        public WMAToMP3CommandArgumentProducer(string filename, string bitrate = null) : base(filename)
+        public WMAToMP3CommandArgumentProducer(string filename, string pathToOutputFolder = null, string bitrate = null) : base(filename, pathToOutputFolder)
         {
             _bitrate = bitrate;
         }

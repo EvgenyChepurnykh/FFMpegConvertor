@@ -11,7 +11,8 @@ namespace TestFFMpegConvertor
         static void Main(string[] args)
         {
             var pathToMP3 = "C:\\Mp3\\BigGun.mp3";
-            var commandArgumentsProducer = new MP3ToWMACommandArgumentProducer(pathToMP3, "256k");
+            var newPath = "C:\\Output\\";
+            var commandArgumentsProducer = new MP3ToWMACommandArgumentProducer(pathToMP3, newPath, "256k");
             var converter = new Converter(commandArgumentsProducer);
             converter.Convert();
         }
